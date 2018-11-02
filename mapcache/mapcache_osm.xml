@@ -14,7 +14,7 @@
         <getmap>
             <params>
                 <!--<MAP>/home/ubuntu/apps/mapserver-basemaps/osm-google-no-labels.map</MAP>-->
-                <MAP>/Users/nicolas/bin/mapserver-basemaps/osm-google-no-labels.map</MAP>
+                <MAP>/home/pi/Public/mapserver-basemaps/osm-google-no-labels.map</MAP>
                 <LAYERS>default</LAYERS>
                 <FORMAT>image/png</FORMAT>
                 <TRANSPARENT>true</TRANSPARENT>
@@ -29,7 +29,7 @@
         <getmap>
             <params>
                 <!--<MAP>/home/ubuntu/apps/mapserver-basemaps/osm-google-no-labels.map</MAP>-->
-                <MAP>/Users/nicolas/bin/mapserver-basemaps/osm-default.map</MAP>
+                <MAP>/home/pi/Public/mapserver-basemaps/osm-default.map</MAP>
                 <LAYERS>default</LAYERS>
                 <FORMAT>image/png</FORMAT>
                 <TRANSPARENT>true</TRANSPARENT>
@@ -44,7 +44,7 @@
         <getmap>
             <params>
                 <!--<MAP>/home/ubuntu/apps/mapserver-basemaps/osm-google-no-labels.map</MAP>-->
-                <MAP>/Users/nicolas/bin/mapserver-basemaps/osm-default-symbols.map</MAP>
+                <MAP>/home/pi/Public/mapserver-basemaps/osm-default-symbols.map</MAP>
                 <LAYERS>default</LAYERS>
                 <FORMAT>image/png</FORMAT>
                 <TRANSPARENT>true</TRANSPARENT>
@@ -58,7 +58,7 @@
     <source name="osm_bing_src" type="wms">
         <getmap>
             <params>
-                <MAP>/Users/nicolas/bin/mapserver-basemaps/osm-bing.map</MAP>
+                <MAP>/home/pi/Public/mapserver-basemaps/osm-bing.map</MAP>
                 <LAYERS>default</LAYERS>
                 <FORMAT>image/png</FORMAT>
                 <TRANSPARENT>true</TRANSPARENT>
@@ -72,7 +72,7 @@
     <source name="osm_bing_symbols_src" type="wms">
         <getmap>
             <params>
-                <MAP>/Users/nicolas/bin/mapserver-basemaps/osm-bing-buildings-symbols.map</MAP>
+                <MAP>/home/pi/Public/mapserver-basemaps/osm-bing-buildings-symbols.map</MAP>
                 <LAYERS>default</LAYERS>
                 <FORMAT>image/png</FORMAT>
                 <TRANSPARENT>true</TRANSPARENT>
@@ -86,7 +86,7 @@
     <source name="osm_michelin_symbols_src" type="wms">
         <getmap>
             <params>
-                <MAP>/Users/nicolas/bin/mapserver-basemaps/osm-michelin-buildings-symbols.map</MAP>
+                <MAP>/home/pi/Public/mapserver-basemaps/osm-michelin-buildings-symbols.map</MAP>
                 <LAYERS>default</LAYERS>
                 <FORMAT>image/png</FORMAT>
                 <TRANSPARENT>true</TRANSPARENT>
@@ -100,7 +100,7 @@
     <source name="osm_michelin_src" type="wms">
         <getmap>
             <params>
-                <MAP>/Users/nicolas/bin/mapserver-basemaps/osm-michelin.map</MAP>
+                <MAP>/home/pi/Public/mapserver-basemaps/osm-michelin.map</MAP>
                 <LAYERS>default</LAYERS>
                 <FORMAT>image/png</FORMAT>
                 <TRANSPARENT>true</TRANSPARENT>
@@ -114,7 +114,7 @@
     <source name="osm_google_src" type="wms">
         <getmap>
             <params>
-                <MAP>/Users/nicolas/bin/mapserver-basemaps/osm-google.map</MAP>
+                <MAP>/home/pi/Public/mapserver-basemaps/osm-google.map</MAP>
                 <LAYERS>default</LAYERS>
                 <FORMAT>image/png</FORMAT>
                 <TRANSPARENT>true</TRANSPARENT>
@@ -128,7 +128,7 @@
     <source name="osm_google_symbols_src" type="wms">
         <getmap>
             <params>
-                <MAP>/Users/nicolas/bin/mapserver-basemaps/osm-google-buildings-symbols.map</MAP>
+                <MAP>/home/pi/Public/mapserver-basemaps/osm-google-buildings-symbols.map</MAP>
                 <LAYERS>default</LAYERS>
                 <FORMAT>image/png</FORMAT>
                 <TRANSPARENT>true</TRANSPARENT>
@@ -142,7 +142,7 @@
     <source name="osm_google_grayscale_src" type="wms">
         <getmap>
             <params>
-                <MAP>/Users/nicolas/bin/mapserver-basemaps/osm-google-buildings-symbols-grayscale.map</MAP>
+                <MAP>/home/pi/Public/mapserver-basemaps/osm-google-buildings-symbols-grayscale.map</MAP>
                 <LAYERS>default</LAYERS>
                 <FORMAT>image/png</FORMAT>
                 <TRANSPARENT>true</TRANSPARENT>
@@ -157,7 +157,7 @@
         <getmap>
             <params>
                 <!--<MAP>/home/ubuntu/apps/mapserver-basemaps/osm-google-labels-only.map</MAP>-->
-                <MAP>/Users/nicolas/bin/mapserver-basemaps/osm-google-labels-only.map</MAP>
+                <MAP>/home/pi/Public/mapserver-basemaps/osm-google-labels-only.map</MAP>
                 <LAYERS>default</LAYERS>
                 <FORMAT>image/png</FORMAT>
                 <TRANSPARENT>true</TRANSPARENT>
@@ -172,7 +172,7 @@
         <getmap>
             <params>
                 <!--<MAP>/home/ubuntu/apps/mapserver-basemaps/osm-symbols-only.map</MAP>-->
-                <MAP>/Users/nicolas/bin/mapserver-basemaps/osm-symbols-only.map</MAP>
+                <MAP>/home/pi/Public/mapserver-basemaps/osm-symbols-only.map</MAP>
                 <LAYERS>default</LAYERS>
                 <FORMAT>image/png</FORMAT>
                 <TRANSPARENT>true</TRANSPARENT>
@@ -187,7 +187,7 @@
         <getmap>
             <params>
                 <!--<MAP>/home/ubuntu/apps/mapserver-basemaps/osm-google-no-labels-grayscale.map</MAP>-->
-                <MAP>/Users/nicolas/bin/mapserver-basemaps/osm-google-no-labels-grayscale.map</MAP>
+                <MAP>/home/pi/Public/mapserver-basemaps/osm-google-no-labels-grayscale.map</MAP>
                 <LAYERS>default</LAYERS>
                 <FORMAT>image/png</FORMAT>
                 <TRANSPARENT>true</TRANSPARENT>
@@ -203,7 +203,7 @@
     <source name="osm_google_lumi_src" type="wms">
         <getmap>
             <params>
-                <MAP>/Users/nicolas/bin/mapserver-basemaps/osm-google-lumi.map</MAP>
+                <MAP>/home/pi/Public/mapserver-basemaps/osm-google-lumi.map</MAP>
                 <LAYERS>default</LAYERS>
                 <FORMAT>image/png</FORMAT>
                 <TRANSPARENT>true</TRANSPARENT>
@@ -217,7 +217,7 @@
     <source name="osm_google_invert_src" type="wms">
         <getmap>
             <params>
-                <MAP>/Users/nicolas/bin/mapserver-basemaps/osm-google-invert.map</MAP>
+                <MAP>/home/pi/Public/mapserver-basemaps/osm-google-invert.map</MAP>
                 <LAYERS>default</LAYERS>
                 <FORMAT>image/png</FORMAT>
                 <TRANSPARENT>true</TRANSPARENT>
@@ -231,7 +231,7 @@
     <source name="osm_google_random_src" type="wms">
         <getmap>
             <params>
-                <MAP>/Users/nicolas/bin/mapserver-basemaps/osm-google-random.map</MAP>
+                <MAP>/home/pi/Public/mapserver-basemaps/osm-google-random.map</MAP>
                 <LAYERS>default</LAYERS>
                 <FORMAT>image/png</FORMAT>
                 <TRANSPARENT>true</TRANSPARENT>
