@@ -6,9 +6,14 @@ Defines a custom object to handle demo
 
 var BasemapsDemo = {
     /////////////////////////////// Configuration variables /////////////////////////////////////////////////
-    URL_MAPSERVER: '/cgi-bin/mapserv?map=/Users/nicolas/bin/mapserver-basemaps/[MAPID]',
-    URL_MAPCACHE: 'http://localhost/mapcache/tms/1.0.0/[MAPID]@GoogleMapsCompatible/{z}/{x}/{y}.png',
-    URL_MAPPROXY: 'http://localhost/mapproxy/service?',
+    // URL_MAPSERVER: '/cgi-bin/mapserv?map=/Users/nicolas/bin/mapserver-basemaps/[MAPID]',
+    // URL_MAPCACHE: 'http://localhost/mapcache/tms/1.0.0/[MAPID]@GoogleMapsCompatible/{z}/{x}/{y}.png',
+    // URL_MAPPROXY: 'http://localhost/mapproxy/service?',
+
+    // raspeberry pi mapserver/mapcache
+    URL_MAPSERVER: '/maps?map=/home/pi/Public/mapserver-basemaps/[MAPID]',
+    URL_MAPCACHE: 'http://konipi/mapcache/tms/1.0.0/[MAPID]@GoogleMapsCompatible/{z}/{x}/{y}.png',
+    URL_MAPPROXY: 'http://konipi/mapproxy/service?',
 
     // URL_ORTHO: '/map/?map=/Users/nicolas/Projets/i3dat/demo/map/',
     // URL_TESTEFFI: 'http://preview.efficity.com:8101/cgi-bin/mapserv?map=/home/nicolas/labels_only_export/osm-google-labels-only.map',
