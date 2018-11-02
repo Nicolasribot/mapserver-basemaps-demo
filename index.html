@@ -1,0 +1,50 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <script src="js/lib/jquery/jquery-1.9.1.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="js/leaflet.zoomdisplay.css"/>
+    <link rel="stylesheet" href="js/Leaflet.Coordinates.css"/>
+    <link rel="stylesheet" href="js/leaflet.bookmarks.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-easybutton@2.0.0/src/easy-button.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
+
+    <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="js/leaflet.wms.js"></script>
+    <script src="js/TileLayer.Grayscale.js"></script>
+    <script src="js/leaflet.zoomdisplay-src.js"></script>
+    <script src="js/Leaflet.Coordinates.js"></script>
+    <script src="js/Leaflet.Bookmarks.js"></script>
+    <script src="https://unpkg.com/leaflet-easybutton@2.0.0/src/easy-button.js"></script>
+
+    <!--icon layers-->
+    <link rel="stylesheet" href="js/iconLayers.css"/>
+    <script src="js/iconLayers.js"></script>
+
+    <!--basemaps demo JS scripts-->
+    <script src="js/basemaps-demo.js"></script>
+
+    <style>
+        #mapid {
+            height: 100%;
+            width: 100%;
+        }
+        .leaflet-tile-border {
+            border: solid black 1px;
+        }
+        .img-trans {
+            opacity: 0.5;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+<div id="mapid"></div>
+<script language="JavaScript">
+    $(document).ready(function () {
+        BasemapsDemo.init();
+    });
+
+</script>
+</body>
+</html>

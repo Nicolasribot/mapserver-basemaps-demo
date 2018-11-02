@@ -1,0 +1,69 @@
+    MAP
+IMAGETYPE png
+MAXSIZE 4000
+SIZE 800 800
+EXTENT        -752703 5017885 1244825 6685233 #France, 3857
+UNITS meters
+WEB
+   METADATA
+      "tinyows_schema_dir" "/usr/local/share/tinyows/schema/"
+      "ows_enable_request" "*"
+      "wfs_title"          "WFS Demo Server for MapServer localhost"
+      "wfs_onlineresource" "http://localhost/cgi-bin/mapserv.cgi?map=/Volumes/gro/code/html/mapserver-basemaps-demo/mapcache/testwfs.map&"
+      "ows_srs" "EPSG:900913 EPSG:4326 EPSG:3857 EPSG:2154"
+   END
+END
+DEBUG 1
+CONFIG "MS_ERRORFILE" "stderr"
+PROJECTION
+   "init=epsg:3857"
+END
+
+
+LAYER
+    METADATA
+      "wfs_title"         "Communes" ##REQUIRED
+      "wfs_srs"           "EPSG:2154" ## REQUIRED
+      "gml_include_items" "all" ## Optional (serves all attributes for layer)
+      "gml_featureid"     "id" ## REQUIRED
+    END
+
+    STATUS ON
+    TYPE POLYGON
+    CONNECTIONTYPE postgis
+    CONNECTION "host=localhost dbname=nicolas user=nicolas port=5439"
+    PROJECTION
+     "init=epsg:2154"
+    END
+    name communes
+    DATA "geom from (select id, nom, code_insee, code_dept, nom_dept, geom from commune) as foo using unique id using srid=2154"
+    #DATA "geom from commune using unique id using srid=2154"
+
+    CLASS
+        style
+            color 255 12 44
+            outlinecolor 197 198 199
+            WIDTH 2
+        END
+    END
+END
+
+LAYER
+    NAME 'Communes_tiny'
+    CONNECTIONTYPE postgis
+    CONNECTION "host=127.0.0.1 user=nicolas password=postgres dbname=nicolas port=5439"
+    METADATA
+        'wfs_title' 'Commnues_tiny'
+        'wfs_namespace_prefix' 'tows'
+        'wfs_namespace_uri' 'http://www.mapserver.org/tinyows/'
+        'wfs_srs' 'EPSG:2154'
+        'tinyows_table'  'commune'
+        'tinyows_writable' '1'
+        'tinyows_retrievable' '1'
+    END
+    DUMP TRUE
+END
+
+
+END
+

@@ -1,0 +1,8 @@
+-- 03 nov 2017:
+-- Leaflet Demo page for mapserver-basemaps maps
+-- Also integrates :
+    other leaflet forked plugins: WMS and iconLayers, to test and maintain them
+    PHP sample code to generate shaded relief images
+-- TODO:
+• One leaflet, from cdn
+• One jquery, from cdn
