@@ -249,9 +249,9 @@
         <retries>10</retries>
         <retry_delay>0.1</retry_delay>
         <!--<base>/data_big2/Documents/geodata/caches/mapcache</base>-->
-        <base>/Volumes/GROSSD/tmp/mapcache</base>
+        <base>/media/pi/PIKEY/cache/mapcache</base>
 
-        <template>/Volumes/GROSSD/tmp/mapcache/{tileset}/{grid}/{z}/{x}/{y}.{ext}</template>
+        <template>/media/pi/PIKEY/cache/mapcache/{tileset}/{grid}/{z}/{x}/{y}.{ext}</template>
         <!--<template>/data_big2/Documents/geodata/caches/mapcache/{tileset}/{grid}/{z}/{x}/{y}.{ext}</template>-->
 
         <!--no symlink for template (only for defautl layout)-->
@@ -277,7 +277,7 @@
     </cache>
 
     <cache name="mbtiles" type="mbtiles">
-        <dbfile>/Volumes/GROSSD/tmp/mapcache/mapcache.mbtiles</dbfile>
+        <dbfile>/media/pi/PIKEY/cache/mapcache/mapcache.mbtiles</dbfile>
     </cache>
 
     <!--____________ tilesets ___________________-->
@@ -463,7 +463,7 @@
     <errors>report</errors>
 
     <locker type="disk">
-        <directory>/Volumes/GROSSD/tmp/mapcache</directory>
+        <directory>/media/pi/PIKEY/cache/mapcache</directory>
         <!--<directory>/data_big2/Documents/geodata/caches/mapcache</directory>-->
         <timeout>300</timeout>
     </locker>
