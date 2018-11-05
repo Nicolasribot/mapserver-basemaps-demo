@@ -250,7 +250,9 @@
         <retry_delay>0.1</retry_delay>
         <!--<base>/data_big2/Documents/geodata/caches/mapcache</base>-->
         <base>/mnt/usb/mapcache</base>
+        <!--<base>/Volumes/GROSSD/tmp/mapcache</base>-->
 
+        <!--<template>/Volumes/GROSSD/tmp/mapcache/{tileset}/{grid}/{z}/{x}/{y}.{ext}</template>-->
         <template>/mnt/usb/mapcache/{tileset}/{grid}/{z}/{x}/{y}.{ext}</template>
         <!--<template>/data_big2/Documents/geodata/caches/mapcache/{tileset}/{grid}/{z}/{x}/{y}.{ext}</template>-->
 
@@ -277,6 +279,7 @@
     </cache>
 
     <cache name="mbtiles" type="mbtiles">
+        <!--<dbfile>/Volumes/GROSSD/tmp/mapcache/mapcache.mbtiles</dbfile>-->
         <dbfile>/mnt/usb/mapcache/mapcache.mbtiles</dbfile>
     </cache>
 
@@ -463,6 +466,7 @@
     <errors>report</errors>
 
     <locker type="disk">
+        <!--<directory>/Volumes/GROSSD/tmp/mapcache</directory>-->
         <directory>/mnt/usb/mapcache</directory>
         <!--<directory>/data_big2/Documents/geodata/caches/mapcache</directory>-->
         <timeout>300</timeout>
