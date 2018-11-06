@@ -55,7 +55,6 @@ var BasemapsDemo = {
         "osm-michelin": {mapserver: 'osm-michelin.map', mapcache: 'osm_michelin_ts'},
         "osm-michelin-symbols": {mapserver: 'osm-michelin-buildings-symbols.map', mapcache: 'osm_michelin_symbols_ts'},
         "osm-google-symbols": {mapserver: 'osm-google-buildings-symbols.map', mapcache: 'osm_google_buildings_symbols_ts'},
-        "osm-google-symbols-nosrc": {mapserver: 'osm-google-buildings-symbols.map', mapcache: 'osm_google_buildings_symbols_nosrc_ts'},
         "osm-google-grayscale": {mapserver: 'osm-google-buildings-symbols-grayscale.map', mapcache: 'osm_google_grayscale_ts'},
         "osm-google-random": {mapserver: 'osm-google-random.map', mapcache: 'osm_google_random_ts'},
         "osm-google-invert": {mapserver: 'osm-google-invert.map', mapcache: 'osm_google_invert_ts'},
@@ -220,17 +219,6 @@ var BasemapsDemo = {
                     attribution: "&copy; OSM data"
                 })
             };
-            providers['osm-google-symbols-nosrc'] = {
-                title: 'osm google symbols nosrc',
-                icon: 'image/osm-google-symbols.png',
-                layer: L.tileLayer.wms(this.URL_MAPSERVER.replace('[MAPID]', this.mapIdMap['osm-google-symbols-nosrc'][mapType]), {
-                    layers: 'default',
-                    format: 'image/png',
-                    transparent: true,
-                    'errorTileUrl': 'image/tileerror.png',
-                    attribution: "&copy; OSM data"
-                })
-            };
             providers['osm-google-grayscale'] = {
                 title: 'osm google grayscale',
                 icon: 'image/osm-google-grayscale.png',
@@ -347,17 +335,6 @@ var BasemapsDemo = {
                 title: 'osm google symbols',
                 icon: 'image/osm-google.png',
                 layer: L.WMS.overlay(this.URL_MAPSERVER.replace('[MAPID]', this.mapIdMap['osm-google-symbols'][mapType]), {
-                    layers: 'default',
-                    format: 'image/png',
-                    transparent: true,
-                    'errorTileUrl': 'image/tileerror.png',
-                    attribution: "&copy; OSM data"
-                })
-            };
-            providers['osm-google-symbols-nosrc'] = {
-                title: 'osm google symbols nosrc',
-                icon: 'image/osm-google.png',
-                layer: L.WMS.overlay(this.URL_MAPSERVER.replace('[MAPID]', this.mapIdMap['osm-google-symbols-nosrc'][mapType]), {
                     layers: 'default',
                     format: 'image/png',
                     transparent: true,
@@ -492,15 +469,6 @@ var BasemapsDemo = {
                 title: 'osm google symbols',
                 icon: 'image/osm-google-symbols.png',
                 layer: new L.TileLayer(this.URL_MAPSERVER.replace('[MAPID]', this.mapIdMap['osm-google-symbols'][mapType]), {
-                    tms: true,
-                    'errorTileUrl': 'image/tileerror.png',
-                    attribution: "&copy; OSM data"
-                })
-            };
-            providers['osm-google-symbols-nosrc'] = {
-                title: 'osm google symbols nosrc',
-                icon: 'image/osm-google-symbols.png',
-                layer: new L.TileLayer(this.URL_MAPSERVER.replace('[MAPID]', this.mapIdMap['osm-google-symbols-nosrc'][mapType]), {
                     tms: true,
                     'errorTileUrl': 'image/tileerror.png',
                     attribution: "&copy; OSM data"

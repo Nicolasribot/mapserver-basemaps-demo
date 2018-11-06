@@ -366,17 +366,8 @@
     </tileset>
 
     <tileset name="osm_google_buildings_symbols_ts">
-        <source>osm_google_symbols_src</source>
-        <cache>disk</cache>
-        <grid>GoogleMapsCompatible</grid>
-        <format>PNG</format>
-        <metatile>8 8</metatile>
-        <metabuffer>10</metabuffer>
-        <expires>3600</expires>
-    </tileset>
-
-    <!--same as above, but w/o source: cache hit only, to test cache-->
-    <tileset name="osm_google_buildings_symbols_nosrc_ts">
+        <!--to test pure cache hit-->
+        <!--<source>osm_google_symbols_src</source>-->
         <cache>disk</cache>
         <grid>GoogleMapsCompatible</grid>
         <format>PNG</format>
