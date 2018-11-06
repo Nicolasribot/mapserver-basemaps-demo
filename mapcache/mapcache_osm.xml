@@ -367,7 +367,7 @@
 
     <tileset name="osm_google_buildings_symbols_ts">
         <!--to test pure cache hit-->
-        <!--<source>osm_google_symbols_src</source>-->
+        <source>osm_google_symbols_src</source>
         <cache>disk</cache>
         <grid>GoogleMapsCompatible</grid>
         <format>PNG</format>
