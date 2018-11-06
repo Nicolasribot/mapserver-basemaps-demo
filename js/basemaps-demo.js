@@ -55,7 +55,7 @@ var BasemapsDemo = {
         "osm-michelin": {mapserver: 'osm-michelin.map', mapcache: 'osm_michelin_ts'},
         "osm-michelin-symbols": {mapserver: 'osm-michelin-buildings-symbols.map', mapcache: 'osm_michelin_symbols_ts'},
         "osm-google-symbols": {mapserver: 'osm-google-buildings-symbols.map', mapcache: 'osm_google_buildings_symbols_ts'},
-        "osm-google-symbols-nosrc": {mapserver: 'osm-google-buildings-symbols.map', mapcache: 'osm_google_buildings_symbols_ts'},
+        "osm-google-symbols-nosrc": {mapserver: 'osm-google-buildings-symbols.map', mapcache: 'osm_google_buildings_symbols_nosrc_ts'},
         "osm-google-grayscale": {mapserver: 'osm-google-buildings-symbols-grayscale.map', mapcache: 'osm_google_grayscale_ts'},
         "osm-google-random": {mapserver: 'osm-google-random.map', mapcache: 'osm_google_random_ts'},
         "osm-google-invert": {mapserver: 'osm-google-invert.map', mapcache: 'osm_google_invert_ts'},
