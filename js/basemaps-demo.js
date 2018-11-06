@@ -44,7 +44,7 @@ var BasemapsDemo = {
     baseLayers: null,
     overlays: [],
     controlLayers: null,
-    layerType: 'mapserver_wmts', // 'mapserver_wms' (single tile), 'mapserver_wmts' (tiled), 'mapcache_tms' (tiled, TMS)
+    layerType: 'mapcache_tms', // 'mapserver_wms' (single tile), 'mapserver_wmts' (tiled), 'mapcache_tms' (tiled, TMS)
     // layerType: 'mapserver_wmts', // 'mapserver_wms' (single tile), 'mapserver_wmts' (tiled), 'mapcache_tms' (tiled, TMS)
     isGridMode: false, // manages tiles grid display on map
     mapIdMap: {
